@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import Navigation from './components/Navigation';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,20 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-          <div className="flex justify-end w-full h-[82px] bg-[#212121] px-6">
-            <div className="flex flex-row justify-center items-center gap-6 tracking-widest ">
-              <Link href="/test">
-                <div className="rounded-full hover:border-1 hover:border-solid hover:border-[#B9F347] text-[#B9F347] p-[8px] px-[30px]">安裝測試</div>
-              </Link>
-              <Link href="/runmax">
-                <div className="rounded-full hover:border-1 hover:border-solid hover:border-[#B9F347] text-[#B9F347] p-[8px] px-[30px]">RunMax</div>
-              </Link>
-              <Link href="/suiciderun">
-                <div className="rounded-full hover:border-1 hover:border-solid hover:border-[#B9F347] text-[#B9F347] p-[8px] px-[30px]">折返跑模式</div>
-              </Link>
-            </div>
-          </div>
-
+        <Navigation />
         {children}
       </body>
     </html>
