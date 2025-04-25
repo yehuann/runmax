@@ -11,7 +11,7 @@ export default function Navigation() {
       <div className="flex flex-row justify-center items-center gap-6 tracking-widest">
         <Link 
           href="/test" 
-          className={`rounded-full border transition-colors duration-200 text-[#B9F347] p-[8px] px-[30px] ${
+          className={`w-[170px] text-center text-xl rounded-full border transition-colors duration-200 text-[#B9F347] p-[8px] ${
             pathname === '/test' ? 'border-[#B9F347]' : 'border-transparent'
           }`}
         >
@@ -19,7 +19,7 @@ export default function Navigation() {
         </Link>
         <Link 
           href="/runmax" 
-          className={`rounded-full border transition-colors duration-200 text-[#B9F347] p-[8px] px-[30px] ${
+          className={`w-[170px] text-center text-xl  rounded-full border transition-colors duration-200 text-[#B9F347] p-[8px] ${
             pathname === '/runmax' ? 'border-[#B9F347]' : 'border-transparent'
           }`}
         >
@@ -27,7 +27,7 @@ export default function Navigation() {
         </Link>
         <Link 
           href="/suiciderun" 
-          className={`rounded-full border transition-colors duration-200 text-[#B9F347] p-[8px] px-[30px] ${
+          className={`w-[170px] text-center text-xl rounded-full border transition-colors duration-200 text-[#B9F347] p-[8px] ${
             pathname === '/suiciderun' ? 'border-[#B9F347]' : 'border-transparent'
           }`}
         >
